@@ -15,7 +15,7 @@
     
     
       
-        <title>Features - AutoNeuro</title>
+        <title>API - AutoNeuro</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#features" class="md-skip">
+        <a href="#api" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Features
+              API
             
           </span>
         </div>
@@ -307,6 +307,43 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datagetter" class="md-nav__link">
+    DataGetter
+  </a>
+  
+    <nav class="md-nav" aria-label="DataGetter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read_data_from_csv" class="md-nav__link">
+    read_data_from_csv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read_data_from_html" class="md-nav__link">
+    read_data_from_html
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -317,7 +354,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/DexDand/ML/edit/master/docs/abhi.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/DexDand/ML/edit/master/docs/API Reference.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -325,20 +362,88 @@
                   
                 
                 
-                <h1 id="features">Features</h1>
-<p><div align="center">
-<img width="100" height="100" src="../images/auto.png">
-</div></p>
-<ul>
-<li>Data sets automatically analyzed</li>
-<li>Machine learning Modelling techniques using both classification and Regression</li>
-<li>Extensive APIs to integrate AutoNeuro into your own tools and scripts</li>
-<li>Evaluations of the models  for easy comparison and reuse</li>
-<li>Automated model building based on the type of problem.</li>
-<li>Output model is hyper-parameter tuned model </li>
-<li>Choice based automated deployment to various clouds.</li>
-<li>Provision of user friendly interface to select input and target features </li>
-</ul>
+                <h1 id="api">API</h1>
+<h2 id="datagetter">DataGetter</h2>
+<h3 id="read_data_from_csv">read_data_from_csv</h3>
+<pre><code>pd.read_csv(&quot;data.csv&quot;)
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Method Description</th>
+<th>This method will be used to read data from a csv file or a flat file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input parameter</td>
+<td>names self,file_name, header,names, use_cols, separator</td>
+</tr>
+<tr>
+<td>Input Parameter Description</td>
+<td>- file_name: name of the file to be read</td>
+</tr>
+<tr>
+<td></td>
+<td>- header: Row number(s) to be used as column names</td>
+</tr>
+<tr>
+<td></td>
+<td>- names : array-like, optional</td>
+</tr>
+<tr>
+<td></td>
+<td>- List of column names to use. If file contains no header row, then you should explicitly pass <code>header=None</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Use_cols:  To load a subset of columns</td>
+</tr>
+<tr>
+<td></td>
+<td>- Separator: Delimiter to use</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>A pandas Dataframe</td>
+</tr>
+<tr>
+<td>On Exception</td>
+<td>Write the exception in the log file. Raise an exception with the appropriate error message</td>
+</tr>
+</tbody>
+</table>
+<h3 id="read_data_from_html">read_data_from_html</h3>
+<pre><code>pd.read_html(&quot;www.google.com&quot;)
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Method Description</th>
+<th>This method will be used to read data from an HTML web page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input parameter</td>
+<td>self,url</td>
+</tr>
+<tr>
+<td>Input Parameter Description</td>
+<td>- url: URL of the HTML page to be read.</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>A pandas Dataframe</td>
+</tr>
+<tr>
+<td>On Exception</td>
+<td>Write the exception in the log file. Raise an exception with the appropriate error message</td>
+</tr>
+</tbody>
+</table>
                 
               
               
