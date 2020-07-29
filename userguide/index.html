@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-guide" class="md-skip">
+        <a href="#autoneuro-user-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -288,6 +288,108 @@
   </li>
 
     
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        User Guide
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="User Guide" class="md-nav__link md-nav__link--active">
+      User Guide
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-autoneuro" class="md-nav__link">
+    Installing AutoNeuro
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing AutoNeuro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-pip-install" class="md-nav__link">
+    Using pip install
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-homescreen-for-autoneuro" class="md-nav__link">
+    Getting HomeScreen for AutoNeuro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-data-set-for-training" class="md-nav__link">
+    Adding Data Set for Training
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-the-data" class="md-nav__link">
+    Training the data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-prediction" class="md-nav__link">
+    Making Prediction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-model-to-cloud" class="md-nav__link">
+    Deploying Model to Cloud
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -304,6 +406,71 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-autoneuro" class="md-nav__link">
+    Installing AutoNeuro
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing AutoNeuro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-pip-install" class="md-nav__link">
+    Using pip install
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-homescreen-for-autoneuro" class="md-nav__link">
+    Getting HomeScreen for AutoNeuro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-data-set-for-training" class="md-nav__link">
+    Adding Data Set for Training
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-the-data" class="md-nav__link">
+    Training the data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-prediction" class="md-nav__link">
+    Making Prediction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-model-to-cloud" class="md-nav__link">
+    Deploying Model to Cloud
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -323,58 +490,111 @@
                   
                 
                 
-                <h1 id="user-guide">User Guide</h1>
+                <h1 id="autoneuro-user-guide">AutoNeuro User Guide</h1>
+<h2 id="installing-autoneuro">Installing AutoNeuro</h2>
+<p>In this section we will install AutoNeuro in our system.We can install AutoNeuro through many ways.</p>
+<h3 id="using-pip-install">Using pip install</h3>
+<p>Open Command Prompt and type pip install AutoNeuro. This will install latest stable version of AutoNeuro in your system. </p>
+<pre><code class="python">pip install autoneuro
+</code></pre>
+
+<h2 id="getting-homescreen-for-autoneuro">Getting HomeScreen for AutoNeuro</h2>
+<p>"" here we will explain what code user has to write to start the process. For now I have written steps for running app.py""</p>
+<p>If you have successfully installed AutoNeuro then:</p>
 <ul>
-<li>Set up</li>
-<li>Installation steps</li>
-<li>Tutorial to demonstrate the installation process </li>
-<li><code>pip install autoneuro</code></li>
-<li>To read and load data from various 
-     <div align="center"><img " src="../images/dataread.png"></div><ul>
-<li>explanation</li>
-</ul>
+<li>
+<p>Go to application\app.py and run</p>
 </li>
-<li>To enable reading various file formats <ul>
-<li>Screenshots</li>
-<li>explanation</li>
-</ul>
+<li>
+<p>Open your web browser and go to localhost:5000</p>
 </li>
-<li>To specify feature and target columns.<ul>
-<li>Screenshots</li>
-<li>explanation</li>
-</ul>
-</li>
-<li>to select the problem type, viz. Regression, Classification <ul>
-<li>Screenshots</li>
-<li>explanation</li>
-</ul>
-</li>
-<li>to perform statistical analytics of the data <ul>
-<li>Screenshots</li>
-<li>explanation</li>
-</ul>
-</li>
-<li>to perform graphical analysis for the data <ul>
-<li>Screenshots</li>
-<li>explanation</li>
-</ul>
-</li>
-<li>to Perform data cleaning operation <ul>
-<li>Screenshots</li>
-<li>explanation</li>
-</ul>
-</li>
-<li>to choose training model <ul>
-<li>Screenshots</li>
-<li>explanation</li>
-</ul>
-</li>
-<li>Perform model Tuning.<ul>
-<li>Screenshots</li>
-<li>explanation</li>
-</ul>
+<li>
+<p>On Successful execution of steps you will see this screen.</p>
 </li>
 </ul>
+<p><img alt="Welcome AutoNeuro" src="../ugimg/img1.png" /></p>
+<h2 id="adding-data-set-for-training">Adding Data Set for Training</h2>
+<p>To add training dataset:</p>
+<ul>
+<li>
+<p>Click on Choose a data sources drop down:</p>
+</li>
+<li>
+<p>Select the type of the file you are uploading. You can upload CSV, Excel, HTML or Text files.</p>
+</li>
+<li>
+<p>Giver the type of delimiter used in the CSV File.</p>
+</li>
+<li>
+<p>Click on Choose file and select your training dataset file. Once you select the dataset it will be validated and on successful validation you would be able to upload data for training. </p>
+</li>
+</ul>
+<p><img alt="Validation Successful" src="../ugimg/img2.png" /></p>
+<ul>
+<li>On clicking upload your data will be uploaded and you will be land to the following page.</li>
+</ul>
+<p><img alt="Data Table" src="../ugimg/img3.png" /></p>
+<ul>
+<li>On this page you will be able to view detailed analysis of your training data. You will get information regarding missing values, columns with zero std deviation and if there is any duplicate column.</li>
+</ul>
+<p><img alt="Data Profile" src="../ugimg/img4.png" /></p>
+<p><img alt="Data Profile2" src="../ugimg/img5.png" /></p>
+<ul>
+<li>If you have reached this page then you have successfully loaded the data for training. Now it’s time to train the data.</li>
+</ul>
+<h2 id="training-the-data">Training the data</h2>
+<ul>
+<li>
+<p>After successfully uploading the data go to “Choose a Problem Type” drop down and select the type of your Problem. </p>
+</li>
+<li>
+<p>You can select from Regression and Classification. AutoNeuro will automatically perform feature engineering and train your data with the highest optimization.</p>
+</li>
+<li>
+<p>After selecting problem type, if you want to drop any unwanted columns then you can select that from the “Drop Unwanted Columns”. </p>
+</li>
+<li>
+<p>The final step is to select the Target Column (dependent column which you want to predict) and click “Submit”.</p>
+</li>
+</ul>
+<p><img alt="Select target column" src="../ugimg/img6.png" /></p>
+<ul>
+<li>After you press Submit, you will see various charts and graphs to understand your data well.</li>
+</ul>
+<p><img alt="Graphical Data" src="../ugimg/img7.png" /></p>
+<ul>
+<li>Once you have viewed your data in graph press “Train Model” for training the model.</li>
+</ul>
+<p><img alt="Graphical Data2" src="../ugimg/img8.png" /></p>
+<ul>
+<li>AutoNeuro will train various models with different hyper parameters and generate report for the best model. If the data is trained successfully then you will be able to see report.</li>
+</ul>
+<p><img alt="Report" src="../ugimg/img9.png" /></p>
+<h2 id="making-prediction">Making Prediction</h2>
+<ul>
+<li>Once you have successfully trained the data you will be able to make predictions. Press ‘Try Prediction’ button at the bottom of the report for making Predictions.</li>
+</ul>
+<p><img alt="Prediction" src="../ugimg/img10.png" /></p>
+<ul>
+<li>For making prediction select the type of testing datafile.</li>
+<li>Select the test file using “Choose File”.</li>
+</ul>
+<p><img alt="Predict" src="../ugimg/img11.png" /></p>
+<ul>
+<li>Press “Predict” to generate Prediction Report.</li>
+</ul>
+<p><img alt="Predict Results" src="../ugimg/img12.png" /></p>
+<p><img alt="Predict Results 2" src="../ugimg/img13.png" /></p>
+<h2 id="deploying-model-to-cloud">Deploying Model to Cloud</h2>
+<ul>
+<li>
+<p>Once you are satisfied with the model Select the cloud Service in which you want to deploy model. We offer deployment in Azure, GCP, AWS.</p>
+</li>
+<li>
+<p>Click on Deploy to proceed further.</p>
+</li>
+</ul>
+<p><img alt="Deploy" src="../ugimg/img14.png" /></p>
                 
               
               
@@ -389,6 +609,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../code/" title="Code Examples" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Code Examples
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
